@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+  <div id="application-root"></div>
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+ <script> 
+ function App (){
+  return (
+    <div>
+     <header>
+       <h1>Sally Student</h1>
+       <section>
+    <ul>
+    <li><address> <a href="mailto:sally.student@gmail.com" target="_blank">sally.student@gmail.com</a></address> </li>
+     <li>571-111-2222</li>
+     </ul>
+     <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Image of Sally">
+     </section>
+    </header>
+    <main>
+    <section>
+      <h3>Education</h3>
+          <ul>
+            <li>George Washington University <br>
+                2010-2014 <br>
+                BA in Computer Science
+            </li>
+            <li>Thinkful Academy <br>
+                2016-2018 <br>
+                Web Developer Certification
+            </li>
+        </ul>
+    </section>
+    <section>
+    <h3>Employment</h3>
+      <ul>
+        <li>Web Developer, Google. <br> Developed pages for Google.</li>
+        <li> Web Developer, Facebook.<br> Helped create pages for Facebook.</li>
+        </ul>
+        </section>
+        </div>
+  );
+  };
+  ReactDom.render{
+    <App/>
+    document.querySelector('#application-root')
+  };
+</script>
+</body>
+</html>
